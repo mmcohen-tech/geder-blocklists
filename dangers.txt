@@ -1,0 +1,128 @@
+! Title: Geder - Kid Dangers Blocklist
+! Description: Sites and platforms that pose specific risks to children:
+!              predator/grooming exposure, unmoderated stranger contact,
+!              anonymous bullying vectors, and user-generated platforms where
+!              adult content slips past moderation.
+!              This is the "we strongly recommend leaving this on for any
+!              household with kids" list.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! SELECTION CRITERIA: Inclusion in this list is based on documented patterns
+! of harm to minors (grooming, predator activity, sexual content moderation
+! failures, or bullying vectors) rather than content taste. Customers who
+! want these removed can uncheck at order time or per-household whitelist.
+
+! ============================================================
+! USER-GENERATED GAMING PLATFORMS (grooming / sexual content risk)
+! ============================================================
+! Roblox: documented predator activity in chat & private games, "condo games"
+! hosting sexual content, persistent moderation failures.
+||roblox.com^
+||rbxcdn.com^
+||robloxcdn.com^
+||robloxlabs.com^
+
+! VRChat: unmoderated adult worlds, voice chat with strangers.
+||vrchat.com^
+||vrchat.cloud^
+||vrchat.net^
+
+! IMVU: avatar-based "adult room" reputation.
+||imvu.com^
+
+! Second Life: adult content regions, stranger interaction.
+||secondlife.com^
+||agni.lindenlab.com^
+
+! ============================================================
+! RANDOM VIDEO CHAT WITH STRANGERS
+! ============================================================
+! Omegle shut down in 2023 but clones abound.
+||omegle.com^
+||ometv.tv^
+||emeraldchat.com^
+||chatroulette.com^
+||chathub.cam^
+||coomeet.com^
+||camsurf.com^
+||monkey.cool^
+||monkey.app^
+||azar.com^
+||holla.live^
+||bazoocam.org^
+||chatrandom.com^
+||shagle.com^
+||chatspin.com^
+||fruzo.com^
+
+! ============================================================
+! ANONYMOUS MESSAGING / BULLYING VECTORS
+! ============================================================
+! Platforms where kids send/receive anonymous messages. Documented
+! connection to cyberbullying and teen suicide.
+||ngl.link^
+||yolo-app.com^
+||tellonym.me^
+||sendit.gg^
+||sarahah.com^
+||curiouscat.live^
+||whisper.sh^
+
+! ============================================================
+! TEEN-TARGETED UNMODERATED SOCIAL
+! ============================================================
+! Platforms marketed to teens with documented predator/grooming risk.
+||amino.app^
+||aminoapps.com^
+||wattpad.com^
+||kik.com^
+||yubo.live^
+||bigolive.tv^
+||fizzsocial.app^
+||fizz.social^
+||wink.plus^
+||hago.com^
+
+! ============================================================
+! ADULT-ADJACENT DATING APPS (age verification weak)
+! ============================================================
+||tinder.com^
+||bumble.com^
+||hinge.co^
+||okcupid.com^
+||match.com^
+||pof.com^
+||plentyoffish.com^
+||badoo.com^
+||tagged.com^
+||meetme.com^
+||skout.com^
+||grindr.com^
+||feeld.co^
+
+! ============================================================
+! LIVE-STREAMING PLATFORMS WITH WEAK MINOR PROTECTIONS
+! ============================================================
+! Included because of documented cases of minors on camera being
+! targeted by adult viewers.
+||bigo.tv^
+||bigo.sg^
+||17.live^
+||younow.com^
+
+! ============================================================
+! NOTES
+! ============================================================
+! Discord is NOT in this list — it's in social.txt per customer request.
+! If a household specifically wants Discord blocked for child-safety reasons
+! (predator DMs), leaving the Social Media category on handles it.
+!
+! Kik is listed in both social.txt and dangers.txt on purpose: it's a
+! messaging app (social) AND has documented history as a predator platform
+! targeting minors. Redundancy is fine — AdGuard de-duplicates on lookup.
+!
+! Family Shield upstream blocks pornography. This list does NOT duplicate
+! that; it focuses on platforms that expose kids to strangers or bullying
+! regardless of explicit content.

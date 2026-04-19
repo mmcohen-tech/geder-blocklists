@@ -1,0 +1,162 @@
+! Title: Geder - Gambling Blocklist
+! Description: Online sports betting, casino sites, poker, crypto gambling,
+!              daily fantasy (real money), state lottery apps, horse racing,
+!              prediction markets, skin gambling, and "social casino" sites
+!              that function as real-money gambling via sweepstakes loopholes.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! NOTE: Family Shield does NOT block gambling on the free tier. This list
+! is the only gambling protection in the Geder stack. Strongly recommended
+! default-on for all households.
+
+! ============================================================
+! MAJOR US SPORTS BETTING
+! ============================================================
+||draftkings.com^
+||fanduel.com^
+||betmgm.com^
+||caesars.com^
+||caesarssportsbook.com^
+||bet365.com^
+||pointsbet.com^
+||fanatics.com^
+||wynnbet.com^
+||unibet.com^
+||betrivers.com^
+||foxbet.com^
+||hardrockbet.com^
+||superbook.com^
+||betparx.com^
+||espnbet.com^
+
+! ============================================================
+! ONLINE CASINOS
+! ============================================================
+||bovada.lv^
+||bovada.com^
+||wildcasino.ag^
+||slotocash.im^
+||ignitioncasino.eu^
+||cafecasino.lv^
+||bitstarz.com^
+||elroyale.com^
+||redstagcasino.eu^
+||eclipsecasino.com^
+||betonline.ag^
+
+! ============================================================
+! ONLINE POKER
+! ============================================================
+||pokerstars.com^
+||888poker.com^
+||ggpoker.com^
+||wsop.com^
+||partypoker.com^
+||americascardroom.eu^
+||clubgg.com^
+||pokerbros.com^
+
+! ============================================================
+! CRYPTO GAMBLING
+! ============================================================
+! Crypto casinos are notoriously aggressive about circumventing US laws.
+! Family Shield may catch some via their proxy/anonymizer categorization,
+! but explicit blocking is safer.
+||stake.com^
+||stake.us^
+||rollbit.com^
+||bitcasino.io^
+||cloudbet.com^
+||7bitcasino.com^
+||fortunejack.com^
+||bc.game^
+||duelbits.com^
+||roobet.com^
+
+! ============================================================
+! DAILY FANTASY SPORTS (real money, functions as gambling)
+! ============================================================
+||prizepicks.com^
+||underdogfantasy.com^
+||underdog.com^
+||sleeper.com^
+||jockmkt.com^
+||boomfantasy.com^
+||dabble.com^
+
+! ============================================================
+! HORSE RACING
+! ============================================================
+||twinspires.com^
+||tvg.com^
+||betamerica.com^
+||xpressbet.com^
+||nyrabets.com^
+||amwager.com^
+
+! ============================================================
+! PREDICTION MARKETS (functionally gambling on news/events)
+! ============================================================
+||kalshi.com^
+||polymarket.com^
+||manifold.markets^
+||predictit.org^
+
+! ============================================================
+! SKIN GAMBLING (CS:GO, Dota, Rust cosmetic betting)
+! ============================================================
+||csgoroll.com^
+||csgoempire.com^
+||gamdom.com^
+||csgolive.com^
+||csgo500.com^
+||key-drop.com^
+||daddyskins.com^
+
+! ============================================================
+! SOCIAL CASINO / SWEEPSTAKES CASINO (real-money gambling via loophole)
+! ============================================================
+||chumbacasino.com^
+||luckylandslots.com^
+||globalpoker.com^
+||funzpoints.com^
+||wowvegas.com^
+||mcluck.com^
+||spreecasino.com^
+||highrollerscasino.com^
+
+! ============================================================
+! STATE LOTTERIES / COURIER APPS
+! ============================================================
+||lottery.com^
+||jackpocket.com^
+||thelotter.com^
+||lottosmile.com^
+
+! ============================================================
+! BINGO / OTHER
+! ============================================================
+||bingospirit.com^
+||onlinebingo.com^
+||cyberspins.com^
+
+! ============================================================
+! ESPORTS BETTING
+! ============================================================
+||unikrn.com^
+||esportsbet.io^
+||thunderpick.com^
+||rivalry.com^
+
+! ============================================================
+! NOTES
+! ============================================================
+! New gambling sites launch constantly. Monthly update cadence
+! recommended. Watch for: new sportsbooks tied to new state launches,
+! new crypto casinos, new daily-fantasy-with-player-props sites.
+!
+! Pari-mutuel horse betting apps are generally considered "gambling" and
+! included here even though some are legal in most states (state law doesn't
+! make them appropriate for a Geder household).

@@ -1,0 +1,167 @@
+! Title: Geder - News Blocklist
+! Description: Major US national news outlets across the political spectrum,
+!              plus online-only outlets, major regional newspapers, tabloids,
+!              and a selection of international outlets heavily read in the US.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+
+! ============================================================
+! CABLE / BROADCAST NEWS
+! ============================================================
+||cnn.com^
+||foxnews.com^
+||foxbusiness.com^
+||msnbc.com^
+||nbcnews.com^
+||abcnews.go.com^
+||cbsnews.com^
+||cnbc.com^
+||bbc.com^
+||bbc.co.uk^
+
+! ============================================================
+! WIRE SERVICES
+! ============================================================
+||reuters.com^
+||apnews.com^
+||ap.org^
+||bloomberg.com^
+||afp.com^
+
+! ============================================================
+! NATIONAL NEWSPAPERS (US)
+! ============================================================
+||nytimes.com^
+||nyt.com^
+||washingtonpost.com^
+||wapo.st^
+||wsj.com^
+||usatoday.com^
+||nypost.com^
+||latimes.com^
+||chicagotribune.com^
+||bostonglobe.com^
+||seattletimes.com^
+
+! ============================================================
+! INTERNATIONAL (US-audience-heavy)
+! ============================================================
+||theguardian.com^
+||dailymail.co.uk^
+||independent.co.uk^
+||thetimes.co.uk^
+||telegraph.co.uk^
+||aljazeera.com^
+||economist.com^
+||ft.com^
+
+! ============================================================
+! PUBLIC RADIO / TV
+! ============================================================
+||npr.org^
+||pbs.org^
+
+! ============================================================
+! POLITICAL / OPINION
+! ============================================================
+||politico.com^
+||thehill.com^
+||axios.com^
+||vox.com^
+||theatlantic.com^
+||newyorker.com^
+||slate.com^
+||motherjones.com^
+||nationalreview.com^
+||thefederalist.com^
+||theintercept.com^
+||thebulwark.com^
+||reason.com^
+
+! ============================================================
+! RIGHT-LEANING OUTLETS
+! ============================================================
+||breitbart.com^
+||dailywire.com^
+||newsmax.com^
+||dailycaller.com^
+||theblaze.com^
+||oann.com^
+||washingtontimes.com^
+||townhall.com^
+||washingtonexaminer.com^
+||redstate.com^
+
+! ============================================================
+! LEFT-LEANING OUTLETS
+! ============================================================
+||huffpost.com^
+||thedailybeast.com^
+||salon.com^
+||rawstory.com^
+||commondreams.org^
+||dailykos.com^
+||talkingpointsmemo.com^
+||jacobin.com^
+
+! ============================================================
+! NEWS AGGREGATORS
+! ============================================================
+||drudgereport.com^
+||realclearpolitics.com^
+||memeorandum.com^
+||smartnews.com^
+||flipboard.com^
+||news.yahoo.com^
+||news.google.com^
+
+! ============================================================
+! BUSINESS / FINANCIAL
+! ============================================================
+||businessinsider.com^
+||marketwatch.com^
+||barrons.com^
+||fortune.com^
+||forbes.com^
+
+! ============================================================
+! MAGAZINES / WEEKLIES
+! ============================================================
+||time.com^
+||newsweek.com^
+||usnews.com^
+||theweek.com^
+
+! ============================================================
+! ONLINE-ONLY / DIGITAL NATIVE
+! ============================================================
+||buzzfeednews.com^
+||buzzfeed.com^
+||vice.com^
+||thedailywire.com^
+||axios.com^
+||semafor.com^
+||punchbowl.news^
+
+! ============================================================
+! TABLOIDS
+! ============================================================
+||tmz.com^
+||radaronline.com^
+||nationalenquirer.com^
+||people.com^
+
+! ============================================================
+! NOTES
+! ============================================================
+! Sports news (ESPN, Bleacher Report, etc.) is NOT included here.
+! If a family wants sports blocked, build a separate "sports.txt" category.
+!
+! Local/hyperlocal news is NOT included. Too many outlets, too noisy,
+! and families generally value it. Add specific local outlets only if
+! a customer requests.
+!
+! Yahoo News and Google News: blocking these via ||domain^ syntax works
+! for the dedicated news subdomains, but be aware some aggregator apps
+! may fall back to alternate paths.

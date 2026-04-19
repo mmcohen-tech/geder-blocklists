@@ -1,0 +1,124 @@
+! Title: Geder - Shock / Memes / Violence Blocklist
+! Description: Sites focused on shock content, gore, graphic imagery,
+!              anonymous imageboards, harassment communities, meme aggregators,
+!              fail / cringe compilations, and fringe "news" that publishes
+!              disturbing content.
+!              Family Shield upstream already handles adult content and
+!              known-malicious domains; this list targets the gap between
+!              pornography and ordinary news.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+
+! ============================================================
+! ANONYMOUS IMAGEBOARDS (frequent source of shock / CSAM-adjacent content)
+! ============================================================
+||4chan.org^
+||4channel.org^
+||4cdn.org^
+||8kun.top^
+||endchan.net^
+||endchan.org^
+||lainchan.org^
+||420chan.org^
+
+! ============================================================
+! HARASSMENT / DOXING COMMUNITIES
+! ============================================================
+||kiwifarms.net^
+||kiwifarms.st^
+||kiwifarms.ru^
+||onionfarms.com^
+
+! ============================================================
+! GORE / SHOCK AGGREGATORS
+! ============================================================
+||liveleak.com^
+||bestgore.fun^
+||bestgore.com^
+||kaotic.com^
+||documentingreality.com^
+||watchpeopledie.tv^
+||wpdeu.net^
+||theync.com^
+||goretube.net^
+||rotten.com^
+||gorecenter.com^
+||crazyshit.com^
+
+! ============================================================
+! MEME AGGREGATORS (time-sink, often crude humor)
+! ============================================================
+||9gag.com^
+||ifunny.co^
+||imgur.com^
+||knowyourmeme.com^
+||memedroid.com^
+||cheezburger.com^
+||funnyjunk.com^
+||funnyordie.com^
+
+! ============================================================
+! FAIL / CRINGE / "PEOPLE OF WALMART"-STYLE COMPILATIONS
+! ============================================================
+||failarmy.com^
+||ebaumsworld.com^
+||break.com^
+||ruinmyweek.com^
+||collegehumor.com^
+||peopleofwalmart.com^
+
+! ============================================================
+! REDDIT CLONES / FRINGE FORUMS
+! ============================================================
+||saidit.net^
+||ruqqus.co^
+||hexbear.net^
+||lemmy.world^
+||lemmy.ml^
+||raddle.me^
+||voat.co^
+||rdrama.net^
+
+! ============================================================
+! FRINGE / CONSPIRACY / "NEWS-ADJACENT"
+! ============================================================
+! Sites that mix real news with conspiracy, graphic imagery, and fringe
+! content. Some overlap with the news list; these skew more toward shock.
+||infowars.com^
+||naturalnews.com^
+||zerohedge.com^
+||rense.com^
+||beforeitsnews.com^
+||liveuamap.com^
+
+! ============================================================
+! ENCYCLOPEDIA-STYLE SHOCK / TROLL WIKIS
+! ============================================================
+||encyclopediadramatica.online^
+||encyclopediadramatica.wiki^
+
+! ============================================================
+! CREEPYPASTA / HORROR-FICTION AGGREGATORS
+! ============================================================
+||creepypasta.com^
+||scaryforkids.com^
+
+! ============================================================
+! NOTES
+! ============================================================
+! Imgur: heavily used as a generic image host across Reddit, forums,
+! tutorials, and blogs. Blocking it will break image display on many
+! legitimate pages. If customer complaints come in, consider moving
+! imgur.com to a per-household whitelist rather than removing from the
+! global list.
+!
+! Rumble and BitChute are NOT in this list — they're in social.txt because
+! they function primarily as YouTube alternatives with creator channels
+! and subscription feeds rather than pure shock aggregation.
+!
+! Family Shield upstream already blocks:
+!   - Pornography
+!   - Known phishing / malware
+!   - Proxy / VPN-bypass services
+! So those categories are intentionally NOT duplicated here.

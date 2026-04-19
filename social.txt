@@ -1,0 +1,213 @@
+! Title: Geder - Social Media Blocklist
+! Description: Major social media platforms + known porn-circumvention sites
+!              (Bing, Reddit). Excludes LinkedIn by design.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! NOTE ON SCOPE: OpenDNS Family Shield handles core adult content upstream,
+! but Bing and Reddit are included here specifically because:
+!  - Bing Image Search can display adult content when SafeSearch is disabled,
+!    making it a common way around Family Shield.
+!  - Reddit hosts a huge volume of adult content on NSFW subreddits, served
+!    from reddit.com domains that Family Shield can't distinguish from SFW.
+! Blocking both at the DNS level closes those gaps.
+
+! ============================================================
+! MAJOR WESTERN SOCIAL PLATFORMS
+! ============================================================
+
+! ====== Meta / Facebook family ======
+||facebook.com^
+||fb.com^
+||fbcdn.net^
+||fbsbx.com^
+||messenger.com^
+||m.me^
+
+! ====== Instagram (Meta) ======
+||instagram.com^
+||cdninstagram.com^
+
+! ====== Threads (Meta) ======
+||threads.net^
+
+! ====== TikTok / ByteDance ======
+||tiktok.com^
+||tiktokcdn.com^
+||tiktokcdn-us.com^
+||tiktokv.com^
+||musical.ly^
+||byteoversea.com^
+||ibytedtos.com^
+||lemon8-app.com^
+||capcut.com^
+
+! ====== Twitter / X ======
+||twitter.com^
+||x.com^
+||t.co^
+||twimg.com^
+
+! ====== Snapchat ======
+||snapchat.com^
+||snap.com^
+||sc-cdn.net^
+
+! ====== Reddit (included: NSFW subreddit traffic) ======
+||reddit.com^
+||redd.it^
+||redditstatic.com^
+||redditmedia.com^
+
+! ====== Pinterest ======
+||pinterest.com^
+||pinimg.com^
+
+! ====== Discord ======
+! Note: blocking Discord will break voice chat for many games.
+! Consider per-household whitelist if complaints come in.
+||discord.com^
+||discord.gg^
+||discordapp.com^
+||discordapp.net^
+
+! ====== Tumblr ======
+||tumblr.com^
+
+! ====== Bluesky ======
+||bsky.app^
+||bsky.social^
+
+! ====== Truth Social ======
+||truthsocial.com^
+
+! ====== Alternative / right-leaning platforms ======
+||gab.com^
+||parler.com^
+||gettr.com^
+||mewe.com^
+||minds.com^
+||rumble.com^
+||bitchute.com^
+||odysee.com^
+
+! ====== Mastodon (main public instances) ======
+||mastodon.social^
+||mastodon.online^
+||mas.to^
+
+! ====== Quora / Q&A ======
+||quora.com^
+
+! ====== Neighborhood / local social ======
+||nextdoor.com^
+
+! ====== Myspace (still alive, still used) ======
+||myspace.com^
+
+! ====== Ask.fm (popular with teens, anonymous Q&A) ======
+||ask.fm^
+
+! ====== BeReal, Yubo, Kik, Clubhouse ======
+||bere.al^
+||yubo.live^
+||kik.com^
+||clubhouse.com^
+
+! ====== Triller ======
+||triller.co^
+
+! ====== Ello, Path, Diaspora ======
+||ello.co^
+||diasporafoundation.org^
+
+! ============================================================
+! MESSAGING APPS (often social-adjacent)
+! ============================================================
+
+! ====== Telegram ======
+||telegram.org^
+||telegram.me^
+||t.me^
+
+! ====== Signal ======
+! Uncomment if you want to block encrypted messaging:
+! ||signal.org^
+
+! ============================================================
+! ASIAN SOCIAL PLATFORMS (commonly used by families with ties abroad)
+! ============================================================
+
+! ====== WeChat / Tencent ======
+||wechat.com^
+||weixin.qq.com^
+||qq.com^
+
+! ====== Sina Weibo ======
+||weibo.com^
+||weibo.cn^
+
+! ====== Douyin (Chinese TikTok) ======
+||douyin.com^
+
+! ====== Xiaohongshu (RedNote / Little Red Book) ======
+||xiaohongshu.com^
+||xhscdn.com^
+
+! ====== QZone ======
+||qzone.qq.com^
+
+! ====== LINE (Japan/Korea) ======
+||line.me^
+
+! ====== KakaoTalk (Korea) ======
+||kakao.com^
+
+! ====== VK (Russia) ======
+||vk.com^
+||vkuseraudio.net^
+
+! ====== Viber ======
+||viber.com^
+
+! ============================================================
+! PORN-CIRCUMVENTION SEARCH ENGINES
+! ============================================================
+! Included here because these are routinely used to bypass Family Shield's
+! adult content filter by disabling SafeSearch.
+
+! ====== Bing ======
+||bing.com^
+
+! ====== Yandex (Russian search - weak content filters) ======
+||yandex.com^
+||yandex.ru^
+
+! ====== Yahoo Search (loose content filters) ======
+! Note: blocks all of Yahoo, not just search. Uncomment if desired:
+! ||yahoo.com^
+
+! ============================================================
+! DECISIONS TO REVIEW — uncomment to enable
+! ============================================================
+
+! WhatsApp — messaging, not feed-based social. Blocking breaks family
+! messaging for households that use it instead of SMS:
+! ||whatsapp.com^
+! ||whatsapp.net^
+
+! YouTube — social comments + infinite scroll, but also kids' educational
+! content, music, tutorials. Usually handled via YouTube Restricted Mode
+! rather than outright blocking:
+! ||youtube.com^
+! ||youtu.be^
+! ||ytimg.com^
+! ||googlevideo.com^
+
+! Twitch — live streaming, chat-based social, gaming-adjacent:
+! ||twitch.tv^
+! ||ttvnw.net^
+
+! LinkedIn — excluded per customer request (professional use):
+! ||linkedin.com^
