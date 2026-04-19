@@ -1,0 +1,180 @@
+! Title: Geder - DoH / DoT Anti-Bypass Blocklist
+! Description: Blocks DNS resolution for known DNS-over-HTTPS (DoH) and
+!              DNS-over-TLS (DoT) endpoints. Required companion to the
+!              port-53 firewall intercept — without this, modern browsers
+!              bypass the intercept via encrypted DNS on port 443.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! HOW THIS WORKS:
+! When a browser tries to use DoH, it first needs to resolve the DoH
+! endpoint's hostname (e.g., "dns.google"). By blocking that lookup at
+! AdGuard, the browser's DoH fails → it falls back to system DNS → the
+! port-53 firewall rule catches it → AdGuard filters normally.
+!
+! MAINTENANCE: DoH endpoints evolve slowly. Review quarterly. Watch for:
+!  - New entries in browser DoH provider lists (Chrome, Firefox, Edge)
+!  - New public DoH providers launching
+!  - VPN services adding DoH (common in 2024-2026)
+
+! ============================================================
+! CLOUDFLARE (the biggest DoH provider — used by Firefox default,
+! Windows 11, many others)
+! ============================================================
+||cloudflare-dns.com^
+||one.one.one.one^
+||1dot1dot1dot1.cloudflare-dns.com^
+||security.cloudflare-dns.com^
+||family.cloudflare-dns.com^
+||chrome.cloudflare-dns.com^
+||mozilla.cloudflare-dns.com^
+
+! ============================================================
+! GOOGLE PUBLIC DNS (Chrome's default DoH option)
+! ============================================================
+||dns.google^
+||dns.google.com^
+||dns64.dns.google^
+
+! ============================================================
+! QUAD9 (privacy-focused, blocks malicious sites by default)
+! ============================================================
+||dns.quad9.net^
+||dns9.quad9.net^
+||dns10.quad9.net^
+||dns11.quad9.net^
+||dns12.quad9.net^
+||quad9.net^
+
+! ============================================================
+! NEXTDNS (popular with privacy-conscious users)
+! ============================================================
+||dns.nextdns.io^
+||nextdns.io^
+
+! ============================================================
+! ADGUARD DNS (public AdGuard, different from AdGuard Home)
+! ============================================================
+||dns.adguard.com^
+||dns.adguard-dns.com^
+||dns-family.adguard.com^
+||dns-unfiltered.adguard.com^
+||family.adguard-dns.com^
+||unfiltered.adguard-dns.com^
+
+! ============================================================
+! OPENDNS / CISCO UMBRELLA
+! ============================================================
+! NOTE: we use OpenDNS Family Shield as OUR upstream on port 53.
+! We're only blocking their DoH endpoints, not their resolvers.
+||doh.opendns.com^
+||dns.opendns.com^
+||doh.familyshield.opendns.com^
+||doh.sandbox.opendns.com^
+
+! ============================================================
+! CLEANBROWSING
+! ============================================================
+||doh.cleanbrowsing.org^
+||family-filter-dns.cleanbrowsing.org^
+||adult-filter-dns.cleanbrowsing.org^
+||security-filter-dns.cleanbrowsing.org^
+
+! ============================================================
+! CONTROLD (d.controld.com / freedns)
+! ============================================================
+||dns.controld.com^
+||freedns.controld.com^
+
+! ============================================================
+! MULLVAD DNS
+! ============================================================
+||dns.mullvad.net^
+||doh.mullvad.net^
+||adblock.doh.mullvad.net^
+||base.dns.mullvad.net^
+||all.dns.mullvad.net^
+||family.dns.mullvad.net^
+||extended.dns.mullvad.net^
+
+! ============================================================
+! OTHER MAJOR PUBLIC DoH PROVIDERS
+! ============================================================
+||doh.libredns.gr^
+||doh.applied-privacy.net^
+||doh.dns.sb^
+||doh.powerdns.org^
+||odvr.nic.cz^
+||doh.dnslify.com^
+||resolver-eu.lelux.fi^
+||jp.tiar.app^
+||doh.tiar.app^
+||doh-jp.blahdns.com^
+||doh-ch.blahdns.com^
+||doh-de.blahdns.com^
+
+! ============================================================
+! PRIVACY-FOCUSED / ANTI-CENSORSHIP DoH
+! ============================================================
+||doh.ffmuc.net^
+||dns.digitale-gesellschaft.ch^
+||dns.switch.ch^
+||dns.seby.io^
+||doh.seby.io^
+||dns.decloudus.com^
+
+! ============================================================
+! VPN-PROVIDER DoH (these leak past our VPN interception)
+! ============================================================
+||nordvpn.com^
+||doh.nordvpn.com^
+||dns.nordvpn.com^
+||doh.pia.com^
+
+! ============================================================
+! CHINESE PUBLIC DoH (included for completeness; some households use)
+! ============================================================
+||dns.alidns.com^
+||doh.alidns.com^
+||dns.pub^
+||doh.pub^
+||doh.360.cn^
+
+! ============================================================
+! APPLE iCLOUD PRIVATE RELAY (Apple's own anti-tracking DoH)
+! ============================================================
+! WARNING: blocking these breaks iCloud Private Relay entirely,
+! which some iPhone/Mac users have enabled. Families that want
+! Private Relay working should whitelist these. Commented out
+! by default; enable if you want to enforce.
+! ||mask-api.icloud.com^
+! ||mask-h2.icloud.com^
+! ||mask.icloud.com^
+
+! ============================================================
+! KNOWN DoH DISCOVERY / PROBE DOMAINS
+! ============================================================
+! Browsers and some apps check these to auto-discover DoH capability.
+||use-application-dns.net^
+
+! ============================================================
+! NOTES
+! ============================================================
+! This list covers the primary DoH endpoints used by:
+!   - Chrome, Firefox, Edge, Safari defaults and options
+!   - Windows 11 "Encrypted DNS" settings
+!   - Android 9+ "Private DNS" (DoT)
+!   - iOS 14+ DoH/DoT profiles
+!   - Major VPN clients with bundled DoH
+!
+! DOES NOT COVER:
+!   - Self-hosted DoH endpoints on random domains (impossible to catalog)
+!   - Brand-new DoH providers launched after this file's date
+!   - Obscure regional providers
+! These edge cases are acceptable — no kid will be running their own
+! DoH server, and brand-new providers are rare.
+!
+! Apple iCloud Private Relay: commented out because blocking it
+! disrupts legitimate Apple services. Uncomment if household decides
+! to enforce.
