@@ -1,0 +1,54 @@
+! Title: Geder - Console Gaming Platforms Blocklist
+! Description: Xbox, PlayStation, and Nintendo online service domains.
+!              Blocking these disables ALL online functionality on game
+!              consoles: multiplayer, updates, digital downloads, online
+!              store, parental controls sync, friends lists.
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! IMPORTANT FOR CUSTOMERS:
+! This list is separate from online-games.txt because of its severe impact.
+! If you enable this, your consoles will be offline-only. Games that
+! require an internet connection (most modern ones) won't work. Most
+! families who own consoles do NOT want this list enabled.
+!
+! Use this list if your household is doing a full console detox, or if
+! consoles are prohibited in your home and you want to block any kid
+! who brings one from connecting it to your WiFi.
+
+! ============================================================
+! MICROSOFT XBOX
+! ============================================================
+||xbox.com^
+||xboxlive.com^
+||xboxservices.com^
+||xboxone.com^
+
+! ============================================================
+! SONY PLAYSTATION
+! ============================================================
+||playstation.com^
+||playstation.net^
+||playstationnetwork.com^
+||sonyentertainmentnetwork.com^
+||scea.com^
+||sie.com^
+
+! ============================================================
+! NINTENDO
+! ============================================================
+||nintendo.com^
+||nintendo.net^
+||nintendowifi.net^
+||nintendoswitch.com^
+
+! ============================================================
+! NOTES
+! ============================================================
+! Some games check these domains at launch even when played offline.
+! Blocking can cause games to refuse to start, show connection errors,
+! or prevent progress saving.
+!
+! If a household wants online-games blocked but consoles working,
+! enable online-games.txt only, leave console.txt disabled.

@@ -1,0 +1,128 @@
+! Title: Geder - Online Games & Gaming Platforms Blocklist
+! Description: Free browser game hubs, online gaming platforms (Steam, Epic,
+!              Battle.net etc.), IO games, and specific popular time-sink
+!              online games. Does NOT include console platforms (those are
+!              in console.txt).
+! Maintained by: Geder
+! Last updated: 2026-04-19
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! NOTE: Roblox is in dangers.txt (predator risk), not here. Twitch is in
+! social.txt as a streaming/social platform.
+
+! ============================================================
+! FREE BROWSER GAME HUBS (biggest time sinks)
+! ============================================================
+||miniclip.com^
+||kongregate.com^
+||addictinggames.com^
+||y8.com^
+||friv.com^
+||crazygames.com^
+||poki.com^
+||coolmathgames.com^
+||gamesgames.com^
+||silvergames.com^
+||1001games.com^
+||agame.com^
+||girlsgogames.com^
+||games.com^
+||armor-games.com^
+||armorgames.com^
+||newgrounds.com^
+
+! ============================================================
+! IO / MULTIPLAYER BROWSER GAMES
+! ============================================================
+||agar.io^
+||slither.io^
+||diep.io^
+||krunker.io^
+||iogames.space^
+||paper-io.com^
+||zombs.io^
+
+! ============================================================
+! SPECIFIC POPULAR TIME-WASTERS
+! ============================================================
+||2048.com^
+||wordle.com^
+||cookieclicker.com^
+||orteil.dashnet.org^
+||typeracer.com^
+
+! ============================================================
+! MAJOR PC GAMING STORE PLATFORMS
+! ============================================================
+! Blocking these prevents purchase/download of new games AND prevents
+! launching existing games that require platform authentication.
+||steampowered.com^
+||steamcommunity.com^
+||steamstatic.com^
+||epicgames.com^
+||epicgames.net^
+||gog.com^
+||ea.com^
+||origin.com^
+||battle.net^
+||blizzard.com^
+||ubisoft.com^
+||ubi.com^
+||itch.io^
+
+! ============================================================
+! SPECIFIC MAJOR ONLINE GAMES
+! ============================================================
+||fortnite.com^
+||minecraft.net^
+||mojang.com^
+||leagueoflegends.com^
+||riotgames.com^
+||hypixel.net^
+||amongus.com^
+||innersloth.com^
+
+! ============================================================
+! BROWSER MMOs / LONG-SESSION GAMES
+! ============================================================
+||runescape.com^
+||jagex.com^
+||neopets.com^
+||jumpstart.com^
+
+! ============================================================
+! GAME COMMUNITY / WIKI / NEWS SITES
+! ============================================================
+! Time-sink category — walkthroughs, wikis, strategy forums.
+||gamefaqs.gamespot.com^
+||gamespot.com^
+||ign.com^
+||kotaku.com^
+||polygon.com^
+||pcgamer.com^
+||rockpapershotgun.com^
+||fandom.com^
+
+! ============================================================
+! MOBILE / INDIE GAME COMMUNITIES
+! ============================================================
+||gamejolt.com^
+
+! ============================================================
+! ADULT GAME SITES (Family Shield catches most; belt-and-suspenders)
+! ============================================================
+||nutaku.net^
+||f95zone.to^
+
+! ============================================================
+! NOTES
+! ============================================================
+! This list intentionally does NOT include console platforms:
+!   - xbox.com, playstation.com, nintendo.com
+! Those live in console.txt so customers can opt into them separately.
+!
+! Roblox is in dangers.txt (safety category), not here.
+!
+! Fandom.com hosts wikis for non-gaming topics too (movies, TV, books).
+! Blocking it affects more than games. Consider moving to a separate
+! "fan wikis / rabbit holes" category if customer complaints arise.
