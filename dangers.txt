@@ -1,7 +1,8 @@
 ! Title: Geder - Kid Dangers Blocklist
 ! Description: Sites and platforms that pose specific risks to children:
 !              predator/grooming exposure, unmoderated stranger contact,
-!              anonymous bullying vectors, and user-generated platforms where
+!              anonymous bullying vectors, random chat apps, teen-targeted
+!              dating-adjacent platforms, and user-generated platforms where
 !              adult content slips past moderation.
 !              This is the "we strongly recommend leaving this on for any
 !              household with kids" list.
@@ -13,6 +14,10 @@
 ! of harm to minors (grooming, predator activity, sexual content moderation
 ! failures, or bullying vectors) rather than content taste. Customers who
 ! want these removed can uncheck at order time or per-household whitelist.
+!
+! NOTE: Some platforms here overlap with social.txt (Discord, Telegram).
+! That's intentional — a family enabling ONLY Kid Dangers should still get
+! protection from major grooming vectors, even without the Social toggle on.
 
 ! ============================================================
 ! USER-GENERATED GAMING PLATFORMS (grooming / sexual content risk)
@@ -58,6 +63,42 @@
 ||fruzo.com^
 
 ! ============================================================
+! RANDOM TEXT CHAT WITH STRANGERS
+! ============================================================
+! Text-based equivalents of Omegle. Designed specifically for
+! anonymous conversation with strangers — high grooming risk.
+||chatib.us^
+||chatib.com^
+||chatiw.com^
+||chatiw.us^
+||strangermeetup.com^
+||talkwithstranger.com^
+||chatous.com^
+||chat-avenue.com^
+||chatavenue.com^
+||wireclub.com^
+||teenchat.com^
+||e-chat.co^
+||echat.com^
+||meetzur.com^
+
+! ============================================================
+! MESSAGING PLATFORMS WITH DOCUMENTED PREDATOR USE
+! ============================================================
+! Discord: public servers + stranger DMs. Well-documented grooming issues.
+! Also appears in social.txt; listed here so "Kid Dangers" alone blocks it.
+||discord.com^
+||discord.gg^
+||discordapp.com^
+||discordapp.net^
+
+! Telegram: encrypted DMs, public groups with minors. Major grooming vector.
+! Also in social.txt.
+||telegram.org^
+||telegram.me^
+||t.me^
+
+! ============================================================
 ! ANONYMOUS MESSAGING / BULLYING VECTORS
 ! ============================================================
 ! Platforms where kids send/receive anonymous messages. Documented
@@ -84,6 +125,9 @@
 ||fizz.social^
 ||wink.plus^
 ||hago.com^
+||spotafriend.net^
+||hoop.tc^
+||hoopdating.com^
 
 ! ============================================================
 ! ADULT-ADJACENT DATING APPS (age verification weak)
@@ -115,13 +159,15 @@
 ! ============================================================
 ! NOTES
 ! ============================================================
-! Discord is NOT in this list — it's in social.txt per customer request.
-! If a household specifically wants Discord blocked for child-safety reasons
-! (predator DMs), leaving the Social Media category on handles it.
+! Discord and Telegram are deliberately in BOTH social.txt and this list.
+! Rationale: a family that wants ONLY kid-safety filtering (not full social
+! media blocking) should still have their kids protected from these two
+! platforms, which have extensive documented grooming problems.
 !
-! Kik is listed in both social.txt and dangers.txt on purpose: it's a
-! messaging app (social) AND has documented history as a predator platform
-! targeting minors. Redundancy is fine — AdGuard de-duplicates on lookup.
+! WhatsApp is NOT included. While it's a messaging app, it generally
+! requires exchanging phone numbers — less of a cold-approach predator
+! vector than open-DM platforms like Discord or Telegram. Families that
+! want WhatsApp blocked can request a custom addition.
 !
 ! Family Shield upstream blocks pornography. This list does NOT duplicate
 ! that; it focuses on platforms that expose kids to strangers or bullying
