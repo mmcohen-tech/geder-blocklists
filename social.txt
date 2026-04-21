@@ -12,6 +12,10 @@
 !  - Reddit hosts a huge volume of adult content on NSFW subreddits, served
 !    from reddit.com domains that Family Shield can't distinguish from SFW.
 ! Blocking both at the DNS level closes those gaps.
+!
+! CHANGED 2026-04-19: Discord and Telegram moved to dangers.txt (their primary
+! risk is predator/grooming, not general social media). If a customer wants
+! Discord/Telegram blocked, they should enable Kid Dangers.
 
 ! ============================================================
 ! MAJOR WESTERN SOCIAL PLATFORMS
@@ -64,14 +68,6 @@
 ||pinterest.com^
 ||pinimg.com^
 
-! ====== Discord ======
-! Note: blocking Discord will break voice chat for many games.
-! Consider per-household whitelist if complaints come in.
-||discord.com^
-||discord.gg^
-||discordapp.com^
-||discordapp.net^
-
 ! ====== Tumblr ======
 ||tumblr.com^
 
@@ -121,19 +117,6 @@
 ! ====== Ello, Path, Diaspora ======
 ||ello.co^
 ||diasporafoundation.org^
-
-! ============================================================
-! MESSAGING APPS (often social-adjacent)
-! ============================================================
-
-! ====== Telegram ======
-||telegram.org^
-||telegram.me^
-||t.me^
-
-! ====== Signal ======
-! Uncomment if you want to block encrypted messaging:
-! ||signal.org^
 
 ! ============================================================
 ! ASIAN SOCIAL PLATFORMS (commonly used by families with ties abroad)
@@ -189,6 +172,13 @@
 ! ||yahoo.com^
 
 ! ============================================================
+! MOVED TO dangers.txt
+! ============================================================
+! Discord and Telegram — their primary risk vector is predator/grooming,
+! not general social media. Now blocked via the Kid Dangers category.
+! Customers who want them blocked should enable Kid Dangers, not Social.
+
+! ============================================================
 ! DECISIONS TO REVIEW — uncomment to enable
 ! ============================================================
 
@@ -196,6 +186,9 @@
 ! messaging for households that use it instead of SMS:
 ! ||whatsapp.com^
 ! ||whatsapp.net^
+
+! Signal — encrypted messaging, minimal predator risk:
+! ||signal.org^
 
 ! YouTube — social comments + infinite scroll, but also kids' educational
 ! content, music, tutorials. Usually handled via YouTube Restricted Mode
