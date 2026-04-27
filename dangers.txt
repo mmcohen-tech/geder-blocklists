@@ -1,13 +1,14 @@
-! Title: Geder - Kid Dangers Blocklist
+! Title: Parsa - Kid Dangers Blocklist
 ! Description: Sites and platforms that pose specific risks to children:
 !              predator/grooming exposure, unmoderated stranger contact,
 !              anonymous bullying vectors, random chat apps, teen-targeted
-!              dating-adjacent platforms, and user-generated platforms where
-!              adult content slips past moderation.
+!              dating-adjacent platforms, NSFW AI companions, and
+!              user-generated platforms where adult content slips past
+!              moderation.
 !              This is the "we strongly recommend leaving this on for any
 !              household with kids" list.
-! Maintained by: Geder
-! Last updated: 2026-04-19
+! Maintained by: Parsa
+! Last updated: 2026-04-27
 ! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
 !
 ! SELECTION CRITERIA: Inclusion in this list is based on documented patterns
@@ -44,23 +45,54 @@
 ! ============================================================
 ! RANDOM VIDEO CHAT WITH STRANGERS
 ! ============================================================
-! Omegle shut down in 2023 but clones abound.
+! Omegle shut down in late 2023 but clones abound.
+! Updated 2026-04-27 after gap testing — added ome.tv, omegleweb.io
+! and other recent clones surfaced via real-world testing.
 ||omegle.com^
+||omegle.fun^
+||omegle.tv^
+||omegle.org^
+||omegleweb.io^
+||ome.tv^
 ||ometv.tv^
 ||emeraldchat.com^
+||emerald.chat^
 ||chatroulette.com^
 ||chathub.cam^
+||chathub.dev^
 ||coomeet.com^
 ||camsurf.com^
+||camgo.com^
+||camnow.com^
 ||monkey.cool^
 ||monkey.app^
 ||azar.com^
+||azarlive.com^
 ||holla.live^
+||holla.world^
 ||bazoocam.org^
+||bazoocam.tv^
 ||chatrandom.com^
 ||shagle.com^
 ||chatspin.com^
 ||fruzo.com^
+||joingy.com^
+||chitchat.gg^
+||omezo.com^
+||talktostrangers.com^
+||meetinchat.com^
+||meetinchat.org^
+||jodal.live^
+||frimchat.com^
+||minichat.com^
+||chatville.com^
+||tinychat.com^
+||y99.in^
+||antichat.com^
+||chatcrypt.com^
+||talkliv.com^
+||talktosomeone.net^
+||konnektme.com^
 
 ! ============================================================
 ! RANDOM TEXT CHAT WITH STRANGERS
@@ -81,6 +113,9 @@
 ||e-chat.co^
 ||echat.com^
 ||meetzur.com^
+||321chat.com^
+||spinchat.com^
+||yapchat.com^
 
 ! ============================================================
 ! MESSAGING PLATFORMS WITH DOCUMENTED PREDATOR USE
@@ -157,6 +192,38 @@
 ||younow.com^
 
 ! ============================================================
+! NSFW / ADULT AI COMPANION PLATFORMS
+! ============================================================
+! AI character platforms that allow or specialize in sexual roleplay.
+! These present grooming-equivalent risks: kids form emotional/sexual
+! attachments to bots, are exposed to graphic content with weak-to-absent
+! moderation, and the dynamic mirrors predator grooming patterns.
+! Intentionally NOT in ai-chat.txt — these stay blocked even when a
+! family allows mainstream AI tools like ChatGPT or Claude.
+||janitor.ai^
+||janitorai.com^
+||spicychat.ai^
+||spicychat.com^
+||crushon.ai^
+||candy.ai^
+||dreamgf.ai^
+||girlfriendgpt.io^
+||promptchan.ai^
+||soulgen.com^
+||sakura.fm^
+||harpyai.com^
+||chub.ai^
+||venice.ai^
+||yodayo.com^
+||aidungeon.io^
+||aidungeon.com^
+||novelai.net^
+||muah.ai^
+||deepnude.cc^
+||undress.app^
+||clothoff.io^
+
+! ============================================================
 ! NOTES
 ! ============================================================
 ! Discord and Telegram are deliberately in BOTH social.txt and this list.
@@ -169,6 +236,11 @@
 ! vector than open-DM platforms like Discord or Telegram. Families that
 ! want WhatsApp blocked can request a custom addition.
 !
+! Mainstream AI assistants (ChatGPT, Claude, Gemini, Character.AI) are
+! NOT in this list — they are in ai-chat.txt as a separate toggle.
+! NSFW AI companions ARE here because they pose grooming/sexual-content
+! risks regardless of household AI policy.
+!
 ! Family Shield upstream blocks pornography. This list does NOT duplicate
-! that; it focuses on platforms that expose kids to strangers or bullying
-! regardless of explicit content.
+! that; it focuses on platforms that expose kids to strangers, bullying,
+! or AI-generated sexual content regardless of explicit web filtering.
