@@ -1,0 +1,147 @@
+! Title: Parsa - AI Chat Blocklist
+! Description: Major AI chat assistants and AI character/companion platforms.
+!              Households often want to allow Search but block AI chat for
+!              homework cheating prevention, addiction concerns, time loss,
+!              or philosophical/religious reasons.
+!              Kept as a separate toggle so each family chooses.
+! Maintained by: Parsa
+! Last updated: 2026-04-27
+! Format: AdGuard / AdBlock syntax. ||domain^ blocks domain + all subdomains.
+!
+! NOTE: NSFW / adult AI companion sites (Janitor.ai, SpicyChat, CrushOn,
+! DreamGF, Candy.ai, Promptchan, Soulgen, etc.) are intentionally NOT
+! in this list. They live in dangers.txt because they pose risks
+! beyond AI access policy — sexual content with weak moderation,
+! emotional dependency, predator-style grooming dynamics. A family that
+! turns this list OFF should still have those blocked.
+
+! ============================================================
+! MAINSTREAM AI ASSISTANTS
+! ============================================================
+
+! ChatGPT (OpenAI)
+||chatgpt.com^
+||chat.openai.com^
+||openai.com^
+
+! Claude (Anthropic)
+||claude.ai^
+
+! Google Gemini (formerly Bard)
+! Subdomain-only block — base google.com stays available for Search.
+||gemini.google.com^
+||bard.google.com^
+
+! Microsoft Copilot
+! Subdomain-only block — bing.com search remains available.
+||copilot.microsoft.com^
+
+! Meta AI
+||meta.ai^
+
+! Inflection Pi
+||pi.ai^
+||heypi.com^
+
+! Perplexity AI
+||perplexity.ai^
+
+! You.com (AI search + chat)
+||you.com^
+
+! Phind (developer-focused AI)
+||phind.com^
+
+! DeepSeek
+||deepseek.com^
+
+! Mistral
+||mistral.ai^
+
+! Groq (fast inference chat)
+||groq.com^
+
+! HuggingFace (chat space + model spaces)
+||huggingface.co^
+||hf.co^
+
+! Poe (Quora's multi-AI aggregator)
+||poe.com^
+
+! ChatHub (multi-AI side-by-side)
+||chathub.gg^
+
+! Kagi Assistant
+||kagi.com^
+
+! ============================================================
+! AI CHARACTER / ROLEPLAY PLATFORMS
+! ============================================================
+! These let users chat with AI personas — sometimes safe, often not.
+! Documented concerns: emotional dependency, mental-health incidents,
+! jailbreaks producing adult content. Character.AI has been involved
+! in lawsuits over teen suicide and inappropriate content with minors.
+
+||character.ai^
+||character.io^
+||c.ai^
+||characterhub.org^
+||chai-research.com^
+||chai.ml^
+||chaiapp.com^
+||replika.ai^
+||replika.com^
+||nomi.ai^
+||kindroid.ai^
+||talkie-ai.com^
+||talkieapp.com^
+||joyland.ai^
+||moemate.io^
+||realmofai.com^
+||tavern.ai^
+||sillytavern.app^
+||inworld.ai^
+
+! ============================================================
+! AI HOMEWORK / WRITING CHEAT TOOLS
+! ============================================================
+! Often used to bypass schoolwork or coursework. Block at parent
+! discretion. Some are general writing tools used legitimately by
+! adults — leave this list off if working adults need them.
+
+||quillbot.com^
+||caktus.ai^
+||studyfetch.com^
+||jasper.ai^
+||copy.ai^
+||writesonic.com^
+||smodin.io^
+||paperpal.com^
+||grammarly.com^
+
+! ============================================================
+! AI IMAGE / VIDEO GENERATION (mainstream)
+! ============================================================
+! Not inherently adult, but commonly used to generate inappropriate
+! imagery. NSFW-specific generators are in dangers.txt.
+
+||midjourney.com^
+||leonardo.ai^
+||playground.com^
+||ideogram.ai^
+||runwayml.com^
+||pika.art^
+||suno.com^
+||udio.com^
+
+! ============================================================
+! NOTES
+! ============================================================
+! Bing search at bing.com is NOT blocked here (only Copilot subdomain is).
+! Google search at google.com is NOT blocked here (only Gemini subdomain).
+!
+! Adult AI companion sites: see dangers.txt.
+!
+! If a household needs an exception (parent uses ChatGPT for work),
+! Parsa support can whitelist a specific domain on that household's
+! filter. Email support@parsa.app to request.
